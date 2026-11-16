@@ -215,7 +215,7 @@ println!("Done offline!");
 (vec_poly_a_part1, vec_poly_a_part2)
 }
 
-pub fn run_lpir_ntru_on_params(     
+pub fn run_lnrpir_on_params(     
     ntru_params: Params,
     lwe_params: Params,
     lwe_large_params: Params,
@@ -898,7 +898,7 @@ fn main() {
 
     println!("DB Size={} GB", (num_items as f64 * log_p as f64)  / (8. * 1024. * 1024. * 1024.));
 
-    run_lpir_ntru_on_params(ntru_params, 
+    run_lnrpir_on_params(ntru_params, 
                             lwe_params, 
                             lwe_large_params,
                             rlwe_full_len_full_mod_params,

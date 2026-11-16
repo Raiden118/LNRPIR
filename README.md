@@ -10,11 +10,14 @@ This scheme was introduced in the paper "LNRPIR: High Throughput PIR with Flexib
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 ```
-2. Clone the repository:
+2. Clone the repository
 `git clone <repository-url>`
+
+then
 `cd <repository-directory>`
 
-3. Run `cargo build`.
+4. Run `cargo build`.
+
 Stability warnings can be safely ignored. 
 
 ## Requirements

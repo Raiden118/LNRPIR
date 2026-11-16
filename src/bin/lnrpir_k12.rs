@@ -868,7 +868,7 @@ fn main() {
 
 
     let n=1024;
-    pub const LWE_STR: &str = "[\"127714\"]";  
+    pub const LWE_STR: &str = "[\"124339\"]";  
     let ell = 2;  
     let mut lwe_params = internal_small_params_for(n, 0, 0, p, 28, ell, LWE_STR);
     lwe_params.noise_width = 0.8;

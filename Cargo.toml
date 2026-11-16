@@ -1,0 +1,24 @@
+[package]
+name = "lnrpir"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spiral-rs = { path = "/root/LNRPIR/spiral-rs" }
+rand = { version = "0.8.5", features = ["small_rng"] }
+rand_chacha = "0.3.1"
+serde_json = "1.0"
+fastrand = "2.0.0"
+log = "0.4.20"
+env_logger = "0.11.1"
+clap = { version = "4.5.0", features = ["derive"] }
+rayon = "1.7"
+
+# [profile.release]
+# lto = "fat"
+# codegen-units = 1
+
+[profile.release-with-debug]
+inherits = "release"
+debug = true
+
